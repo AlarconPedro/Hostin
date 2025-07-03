@@ -159,3 +159,4 @@ C:\Desenvolvimento\Projetos\Hostin\BackEnd\HostIn_Api\obj\Debug\net9.0\refint\Ho
 C:\Desenvolvimento\Projetos\Hostin\BackEnd\HostIn_Api\obj\Debug\net9.0\HostIn_Api.pdb
 C:\Desenvolvimento\Projetos\Hostin\BackEnd\HostIn_Api\obj\Debug\net9.0\HostIn_Api.genruntimeconfig.cache
 C:\Desenvolvimento\Projetos\Hostin\BackEnd\HostIn_Api\obj\Debug\net9.0\ref\HostIn_Api.dll
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\HostIn_Api\obj\Debug\net9.0\HostIn_Api.sourcelink.json

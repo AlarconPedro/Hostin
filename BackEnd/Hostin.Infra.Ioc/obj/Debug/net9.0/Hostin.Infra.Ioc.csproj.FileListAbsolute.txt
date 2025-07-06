@@ -1,0 +1,15 @@
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\bin\Debug\net9.0\Hostin.Infra.Ioc.deps.json
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\bin\Debug\net9.0\Hostin.Infra.Ioc.runtimeconfig.json
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\bin\Debug\net9.0\Hostin.Infra.Ioc.dll
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\bin\Debug\net9.0\Hostin.Infra.Ioc.pdb
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\obj\Debug\net9.0\Hostin.Infra.Ioc.csproj.AssemblyReference.cache
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\obj\Debug\net9.0\Hostin.Infra.Ioc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\obj\Debug\net9.0\Hostin.Infra.Ioc.AssemblyInfoInputs.cache
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\obj\Debug\net9.0\Hostin.Infra.Ioc.AssemblyInfo.cs
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\obj\Debug\net9.0\Hostin.Infra.Ioc.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\obj\Debug\net9.0\Hostin.Infra.Ioc.sourcelink.json
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\obj\Debug\net9.0\Hostin.Infra.Ioc.dll
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\obj\Debug\net9.0\refint\Hostin.Infra.Ioc.dll
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\obj\Debug\net9.0\Hostin.Infra.Ioc.pdb
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\obj\Debug\net9.0\Hostin.Infra.Ioc.genruntimeconfig.cache
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\obj\Debug\net9.0\ref\Hostin.Infra.Ioc.dll

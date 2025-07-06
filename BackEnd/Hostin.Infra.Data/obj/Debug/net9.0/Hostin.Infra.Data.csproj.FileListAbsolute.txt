@@ -1,0 +1,12 @@
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\bin\Debug\net9.0\Hostin.Infra.Data.deps.json
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\bin\Debug\net9.0\Hostin.Infra.Data.dll
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\bin\Debug\net9.0\Hostin.Infra.Data.pdb
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\obj\Debug\net9.0\Hostin.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\obj\Debug\net9.0\Hostin.Infra.Data.AssemblyInfoInputs.cache
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\obj\Debug\net9.0\Hostin.Infra.Data.AssemblyInfo.cs
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\obj\Debug\net9.0\Hostin.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\obj\Debug\net9.0\Hostin.Infra.Data.sourcelink.json
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\obj\Debug\net9.0\Hostin.Infra.Data.dll
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\obj\Debug\net9.0\refint\Hostin.Infra.Data.dll
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\obj\Debug\net9.0\Hostin.Infra.Data.pdb
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\obj\Debug\net9.0\ref\Hostin.Infra.Data.dll

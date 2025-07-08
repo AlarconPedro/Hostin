@@ -20,9 +20,6 @@
       "RelativeMoniker": "D:0:0:{2D324C1D-FD6E-4385-90AF-FB017C802B3C}|HostIn_Api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B6188B2-3D4A-48B2-A4AF-74412CCC947F}|..\\Hostin.Infra.Data\\Hostin.Infra.Data.csproj|c:\\desenvolvimento\\projetos\\hostin\\backend\\hostin.infra.data\\mappings\\tbbancomap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AEE189EC-3BA3-4E94-B6D1-520FCA9ACCF8}|..\\Hostin.Core\\Hostin.Core.csproj|c:\\desenvolvimento\\projetos\\hostin\\backend\\hostin.core\\entities\\tbcaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -159,7 +156,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -193,19 +190,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "TbQuarto.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbQuarto.cs",
-              "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbQuarto.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbQuarto.cs",
-              "RelativeToolTip": "..\\Hostin.Core\\Entities\\TbQuarto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:33:16.606Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
               "Title": "TbPromocao.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbPromocao.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbPromocao.cs",
@@ -218,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "TbBloco.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbBloco.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbBloco.cs",
@@ -231,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "TbBanco.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbBanco.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbBanco.cs",
@@ -240,19 +224,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-06T17:31:00.168Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TbBancoMap.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Data\\Mappings\\TbBancoMap.cs",
-              "RelativeDocumentMoniker": "..\\Hostin.Infra.Data\\Mappings\\TbBancoMap.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Data\\Mappings\\TbBancoMap.cs",
-              "RelativeToolTip": "..\\Hostin.Infra.Data\\Mappings\\TbBancoMap.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAIBJwBMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:30:11.718Z",
               "EditorCaption": ""
             },
             {
@@ -270,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "TbUsuarioModulo.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbUsuarioModulo.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbUsuarioModulo.cs",
@@ -289,14 +260,27 @@
               "RelativeDocumentMoniker": "..\\Hostin.Infra.Ioc\\DI\\DI.cs",
               "ToolTip": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Ioc\\DI\\DI.cs",
               "RelativeToolTip": "..\\Hostin.Infra.Ioc\\DI\\DI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIAwwAoAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-02T23:30:34.019Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
+              "Title": "TbQuarto.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbQuarto.cs",
+              "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbQuarto.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbQuarto.cs",
+              "RelativeToolTip": "..\\Hostin.Core\\Entities\\TbQuarto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T17:33:16.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "TbCaixa.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbCaixa.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbCaixa.cs",
@@ -335,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "TbServico.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbServico.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbServico.cs",
@@ -348,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "TbSorteio.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbSorteio.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbSorteio.cs",
@@ -361,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "TbTela.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbTela.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbTela.cs",
@@ -374,7 +358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "TbUsuario.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbUsuario.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbUsuario.cs",
@@ -387,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "TbProduto.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbProduto.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbProduto.cs",
@@ -400,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "TbPremio.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbPremio.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbPremio.cs",
@@ -413,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "TbPlanoConta.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbPlanoConta.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbPlanoConta.cs",
@@ -426,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "TbPessoa.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbPessoa.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbPessoa.cs",
@@ -439,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "TbPermissao.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbPermissao.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbPermissao.cs",
@@ -452,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "TbParticipantesCupon.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbParticipantesCupon.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbParticipantesCupon.cs",
@@ -465,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "TbParticipante.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbParticipante.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbParticipante.cs",
@@ -478,7 +462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "TbParoquium.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbParoquium.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbParoquium.cs",
@@ -491,7 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "TbMovimentoInvestimento.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbMovimentoInvestimento.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbMovimentoInvestimento.cs",
@@ -504,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "TbMovimentoEstoque.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbMovimentoEstoque.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbMovimentoEstoque.cs",
@@ -517,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "TbMovimentoContaCorrente.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbMovimentoContaCorrente.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbMovimentoContaCorrente.cs",
@@ -530,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "TbMovimentoCaixa.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbMovimentoCaixa.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbMovimentoCaixa.cs",
@@ -543,7 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "TbModulo.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbModulo.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbModulo.cs",
@@ -556,7 +540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "TbModeloContrato.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbModeloContrato.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbModeloContrato.cs",
@@ -569,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "TbLancamento.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbLancamento.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbLancamento.cs",
@@ -582,7 +566,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "TbHospede.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbHospede.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbHospede.cs",
@@ -595,7 +579,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "TbGavetum.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbGavetum.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbGavetum.cs",
@@ -608,7 +592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "TbEventoQuarto.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbEventoQuarto.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbEventoQuarto.cs",
@@ -621,7 +605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "TbEventoPessoa.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbEventoPessoa.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbEventoPessoa.cs",
@@ -634,7 +618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "TbEventoDespesa.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbEventoDespesa.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbEventoDespesa.cs",
@@ -647,7 +631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 35,
               "Title": "TbEvento.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbEvento.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbEvento.cs",
@@ -660,7 +644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 36,
               "Title": "TbEmpresa.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbEmpresa.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbEmpresa.cs",
@@ -673,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 37,
               "Title": "TbCupon.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbCupon.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbCupon.cs",
@@ -686,7 +670,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 38,
               "Title": "TbContrato.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbContrato.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbContrato.cs",
@@ -699,7 +683,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 39,
               "Title": "TbContasReceberIten.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbContasReceberIten.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbContasReceberIten.cs",
@@ -712,7 +696,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 40,
               "Title": "TbContasReceber.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbContasReceber.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbContasReceber.cs",
@@ -725,7 +709,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 41,
               "Title": "TbContasPagarIten.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbContasPagarIten.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbContasPagarIten.cs",
@@ -738,7 +722,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 42,
               "Title": "TbContasPagar.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbContasPagar.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbContasPagar.cs",
@@ -751,7 +735,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 43,
               "Title": "TbConta.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbConta.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbConta.cs",
@@ -764,7 +748,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 44,
               "Title": "TbComunidade.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbComunidade.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbComunidade.cs",
@@ -777,7 +761,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 45,
               "Title": "TbComprasIten.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbComprasIten.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbComprasIten.cs",
@@ -790,7 +774,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 46,
               "Title": "TbCompra.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbCompra.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbCompra.cs",
@@ -803,7 +787,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 47,
               "Title": "TbCidade.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbCidade.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbCidade.cs",

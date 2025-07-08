@@ -10,3 +10,7 @@ C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\obj\Debug\net9.0\Ho
 C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\obj\Debug\net9.0\refint\Hostin.Infra.Data.dll
 C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\obj\Debug\net9.0\Hostin.Infra.Data.pdb
 C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\obj\Debug\net9.0\ref\Hostin.Infra.Data.dll
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\obj\Debug\net9.0\Hostin.Infra.Data.csproj.AssemblyReference.cache
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\bin\Debug\net9.0\Hostin.Core.dll
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\bin\Debug\net9.0\Hostin.Core.pdb
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Data\obj\Debug\net9.0\Hostin.I.B59F51C9.Up2Date

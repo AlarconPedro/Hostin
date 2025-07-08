@@ -15,7 +15,7 @@ public static class DI
     //public static IServiceCollection AddInfrastructureAPI(this IServiceCollection services, IConfiguration configuration, bool isOnline)
     //{
         //string connectionString = isOnline ? "HostinWeb" : "HostinLocal";
-        //services.AddDbContext<AppDbContext>(options =>
+        //services.AddDbContext<Hostin>(options =>
         //{
         //    options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
         //    options.UseSqlServer(configuration.GetConnectionString(connectionString),

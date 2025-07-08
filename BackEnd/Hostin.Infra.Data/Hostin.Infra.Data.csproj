@@ -8,9 +8,17 @@
 
   <ItemGroup>
     <Folder Include="Context\" />
-    <Folder Include="Migrations\" />
     <Folder Include="Mappings\" />
+    <Folder Include="Migrations\" />
     <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hostin.Core\Hostin.Core.csproj" />
   </ItemGroup>
 
 </Project>

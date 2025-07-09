@@ -13,3 +13,8 @@ C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\obj\Debug\net9.0\ref
 C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\obj\Debug\net9.0\Hostin.Infra.Ioc.pdb
 C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\obj\Debug\net9.0\Hostin.Infra.Ioc.genruntimeconfig.cache
 C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\obj\Debug\net9.0\ref\Hostin.Infra.Ioc.dll
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\bin\Debug\net9.0\Hostin.Core.dll
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\bin\Debug\net9.0\Hostin.Infra.Data.dll
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\bin\Debug\net9.0\Hostin.Core.pdb
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\bin\Debug\net9.0\Hostin.Infra.Data.pdb
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\Hostin.Infra.Ioc\obj\Debug\net9.0\Hostin.I.C52EDD9B.Up2Date

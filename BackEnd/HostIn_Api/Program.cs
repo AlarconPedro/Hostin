@@ -1,3 +1,5 @@
+using Hostin.Infra.Ioc;
+
 var Hostin = "HostinAPI";
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,7 +19,7 @@ builder.Services.AddCors(options =>
 });
 
 // Add services to the container.
-//builder.Services.AddIn
+builder.Services.AddInfrastructureAPI(builder.Configuration, false);
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi

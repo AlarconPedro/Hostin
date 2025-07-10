@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 namespace HostIn.Core.Entities;
+
 public partial class TbUsuario
 {
     public int UsuCodigo { get; set; }
@@ -18,7 +19,11 @@ public partial class TbUsuario
 
     public int? EmpCodigo { get; set; }
 
+    public int? GraCodigo { get; set; }
+
     public virtual TbEmpresa? EmpCodigoNavigation { get; set; }
+
+    public virtual TbGrupoAcesso? GraCodigoNavigation { get; set; }
 
     public virtual ICollection<TbCompra> TbCompraAutoriCodigoNavigations { get; set; } = new List<TbCompra>();
 

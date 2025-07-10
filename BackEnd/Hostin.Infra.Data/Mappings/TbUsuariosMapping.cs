@@ -32,5 +32,9 @@ internal class TbUsuariosMapping : IEntityTypeConfiguration<TbUsuario>
         builder.HasOne(d => d.EmpCodigoNavigation).WithMany(p => p.TbUsuarios)
             .HasForeignKey(d => d.EmpCodigo)
             .HasConstraintName("FK_Tb_Usuarios_Tb_Empresa");
+
+        builder.HasOne(d => d.GraCodigoNavigation).WithMany(p => p.TbUsuarios)
+            .HasForeignKey(d => d.GraCodigo)
+            .HasConstraintName("FK_Tb_Usuarios_Tb_GrupoAcesso");
     }
 }

@@ -23,6 +23,8 @@ public static class DI
                 b => b.MigrationsAssembly(typeof(HostinContext).Assembly.FullName));
         });
 
+        //services.AddHangfire(config => config.UseMemoryStorage());
+
         services.AddAuthorization();
         services.AddHangfireServer();
 

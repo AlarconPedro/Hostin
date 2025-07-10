@@ -59,6 +59,10 @@ public partial class HostinContext : DbContext
 
     public virtual DbSet<TbGavetum> TbGaveta { get; set; }
 
+    public virtual DbSet<TbGrupoAcesso> TbGrupoAcessos { get; set; }
+
+    public virtual DbSet<TbGrupoAcessoPermissao> TbGrupoAcessoPermissaos { get; set; }
+
     public virtual DbSet<TbHospede> TbHospedes { get; set; }
 
     public virtual DbSet<TbLancamento> TbLancamentos { get; set; }
@@ -132,7 +136,10 @@ public partial class HostinContext : DbContext
         modelBuilder.ApplyConfiguration(new TbEventoPessoaMapping());
         modelBuilder.ApplyConfiguration(new TbEventoQuartoMapping());
         modelBuilder.ApplyConfiguration(new TbGavetaMapping());
+        modelBuilder.ApplyConfiguration(new TbGrupoAcessoMapping());
+        modelBuilder.ApplyConfiguration(new TbGrupoAcessoPermissaoMapping());
         modelBuilder.ApplyConfiguration(new TbHospedeMapping());
+        modelBuilder.ApplyConfiguration(new TbLancamentoMapping());
         modelBuilder.ApplyConfiguration(new TbModeloContratoMapping());
         modelBuilder.ApplyConfiguration(new TbModuloMapping());
         modelBuilder.ApplyConfiguration(new TbMovimentoCaixaMapping());

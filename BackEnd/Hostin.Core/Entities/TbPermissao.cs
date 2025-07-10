@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 namespace HostIn.Core.Entities;
+
 public partial class TbPermissao
 {
     public int PerCodigo { get; set; }
@@ -17,6 +18,8 @@ public partial class TbPermissao
     public int? TelCodigo { get; set; }
 
     public int? UsuCodigo { get; set; }
+
+    public virtual ICollection<TbGrupoAcessoPermissao> TbGrupoAcessoPermissaos { get; set; } = new List<TbGrupoAcessoPermissao>();
 
     public virtual TbTela? TelCodigoNavigation { get; set; }
 

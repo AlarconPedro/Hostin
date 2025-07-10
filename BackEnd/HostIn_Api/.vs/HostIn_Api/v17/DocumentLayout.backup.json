@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\HostIn_Api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2B6188B2-3D4A-48B2-A4AF-74412CCC947F}|..\\Hostin.Infra.Data\\Hostin.Infra.Data.csproj|c:\\desenvolvimento\\projetos\\hostin\\backend\\hostin.infra.data\\context\\hostincontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2B6188B2-3D4A-48B2-A4AF-74412CCC947F}|..\\Hostin.Infra.Data\\Hostin.Infra.Data.csproj|c:\\desenvolvimento\\projetos\\hostin\\backend\\hostin.infra.data\\mappings\\tblancamentomapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -28,9 +31,6 @@
       "RelativeMoniker": "D:0:0:{2D324C1D-FD6E-4385-90AF-FB017C802B3C}|HostIn_Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B6188B2-3D4A-48B2-A4AF-74412CCC947F}|..\\Hostin.Infra.Data\\Hostin.Infra.Data.csproj|c:\\desenvolvimento\\projetos\\hostin\\backend\\hostin.infra.data\\context\\hostincontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AEE189EC-3BA3-4E94-B6D1-520FCA9ACCF8}|..\\Hostin.Core\\Hostin.Core.csproj|c:\\desenvolvimento\\projetos\\hostin\\backend\\hostin.core\\entities\\tbusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -48,24 +48,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TbLancamentoMapping.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Data\\Mappings\\TbLancamentoMapping.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Infra.Data\\Mappings\\TbLancamentoMapping.cs",
               "ToolTip": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Data\\Mappings\\TbLancamentoMapping.cs",
               "RelativeToolTip": "..\\Hostin.Infra.Data\\Mappings\\TbLancamentoMapping.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAgwBYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-10T01:48:59.707Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TbHospede.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbHospede.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbHospede.cs",
@@ -78,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TbLancamento.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbLancamento.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbLancamento.cs",
@@ -91,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "TbPermissaoMapping.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Data\\Mappings\\TbPermissaoMapping.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Infra.Data\\Mappings\\TbPermissaoMapping.cs",
@@ -104,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "TbGrupoAcessoPermissaoMapping.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Data\\Mappings\\TbGrupoAcessoPermissaoMapping.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Infra.Data\\Mappings\\TbGrupoAcessoPermissaoMapping.cs",
@@ -117,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "TbGrupoAcessoPermissao.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\TbGrupoAcessoPermissao.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\TbGrupoAcessoPermissao.cs",
@@ -126,19 +126,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-10T01:41:58.87Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\HostIn_Api\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\HostIn_Api\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-10T01:13:06.095Z",
               "EditorCaption": ""
             },
             {
@@ -185,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\HostIn_Api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -198,7 +185,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "HostinContext.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Data\\Context\\HostinContext.cs",
+              "RelativeDocumentMoniker": "..\\Hostin.Infra.Data\\Context\\HostinContext.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Data\\Context\\HostinContext.cs",
+              "RelativeToolTip": "..\\Hostin.Infra.Data\\Context\\HostinContext.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAwwI0AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T01:20:37.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\HostIn_Api\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\HostIn_Api\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-10T01:13:06.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "DI.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Ioc\\DI\\DI.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Infra.Ioc\\DI\\DI.cs",
@@ -207,19 +220,6 @@
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T00:57:58.771Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HostinContext.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Data\\Context\\HostinContext.cs",
-              "RelativeDocumentMoniker": "..\\Hostin.Infra.Data\\Context\\HostinContext.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Data\\Context\\HostinContext.cs",
-              "RelativeToolTip": "..\\Hostin.Infra.Data\\Context\\HostinContext.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAuwIsAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T01:20:37.562Z",
               "EditorCaption": ""
             }
           ]

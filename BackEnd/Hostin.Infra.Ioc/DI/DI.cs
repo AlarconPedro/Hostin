@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Hangfire;
+using Hangfire.MemoryStorage;
 using HostIn_Api;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -23,7 +24,7 @@ public static class DI
                 b => b.MigrationsAssembly(typeof(HostinContext).Assembly.FullName));
         });
 
-        //services.AddHangfire(config => config.UseMemoryStorage());
+        services.AddHangfire(config => config.UseMemoryStorage());
 
         services.AddAuthorization();
         services.AddHangfireServer();

@@ -9,4 +9,6 @@ namespace Hostin.Core.Interfaces;
 
 public interface IEmpresaService : IGenericService<TbEmpresa> 
 {
+    Task AddEmpresa(TbEmpresa empresa); // Method to add a new company
+    Task<TbEmpresa> GetEmpresaExistente(string cnpj);
 }

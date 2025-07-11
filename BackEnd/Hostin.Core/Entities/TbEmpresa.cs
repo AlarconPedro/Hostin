@@ -8,7 +8,7 @@ public partial class TbEmpresa
 
     public string? EmpNome { get; set; }
 
-    public int? EmpCnpj { get; set; }
+    public string? EmpCnpj { get; set; }
 
     public string? EmpCidade { get; set; }
 

@@ -190,3 +190,7 @@ C:\Desenvolvimento\Projetos\Hostin\BackEnd\HostIn_Api\bin\Debug\net9.0\Hostin.Co
 C:\Desenvolvimento\Projetos\Hostin\BackEnd\HostIn_Api\bin\Debug\net9.0\Hostin.Infra.Data.dll
 C:\Desenvolvimento\Projetos\Hostin\BackEnd\HostIn_Api\bin\Debug\net9.0\Hostin.Core.pdb
 C:\Desenvolvimento\Projetos\Hostin\BackEnd\HostIn_Api\bin\Debug\net9.0\Hostin.Infra.Data.pdb
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\HostIn_Api\bin\Debug\net9.0\Hangfire.MemoryStorage.dll
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\HostIn_Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\HostIn_Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Desenvolvimento\Projetos\Hostin\BackEnd\HostIn_Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

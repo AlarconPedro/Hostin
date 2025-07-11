@@ -134,6 +134,18 @@
           }
         }
       },
+      "Hangfire.MemoryStorage/1.8.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Hangfire.Core": "1.7.35"
+        },
+        "compile": {
+          "lib/netstandard1.3/Hangfire.MemoryStorage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Hangfire.MemoryStorage.dll": {}
+        }
+      },
       "Hangfire.NetCore/1.8.20": {
         "type": "package",
         "dependencies": {
@@ -2039,6 +2051,19 @@
         "lib/netstandard2.0/tr-TR/Hangfire.Core.resources.dll",
         "lib/netstandard2.0/zh-TW/Hangfire.Core.resources.dll",
         "lib/netstandard2.0/zh/Hangfire.Core.resources.dll"
+      ]
+    },
+    "Hangfire.MemoryStorage/1.8.1.2": {
+      "sha512": "Z2C+WOHRHMe4Oh4VghJPGTECh0+/sndaLiUCv1Zyoq+6Y79FXteUg+nl2M40xc1D9ntntBfLwfLpfDpLA/idEg==",
+      "type": "package",
+      "path": "hangfire.memorystorage/1.8.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hangfire.memorystorage.1.8.1.2.nupkg.sha512",
+        "hangfire.memorystorage.nuspec",
+        "lib/net40/Hangfire.MemoryStorage.dll",
+        "lib/netstandard1.3/Hangfire.MemoryStorage.dll"
       ]
     },
     "Hangfire.NetCore/1.8.20": {
@@ -5297,6 +5322,7 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "Hangfire >= 1.8.20",
+      "Hangfire.MemoryStorage >= 1.8.1.2",
       "Hostin.Core >= 1.0.0",
       "Hostin.Infra.Data >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.6",
@@ -5366,6 +5392,10 @@
           "Hangfire": {
             "target": "Package",
             "version": "[1.8.20, )"
+          },
+          "Hangfire.MemoryStorage": {
+            "target": "Package",
+            "version": "[1.8.1.2, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

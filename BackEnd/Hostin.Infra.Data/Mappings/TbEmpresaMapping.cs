@@ -22,7 +22,7 @@ internal class TbEmpresaMapping : IEntityTypeConfiguration<TbEmpresa>
         builder.HasIndex(e => e.EmpCodigo, "UQ__Tb_Empre__22C597B821DA9E26").IsUnique();
 
         builder.Property(e => e.EmpCidade).HasMaxLength(20);
-        builder.Property(e => e.EmpCnpj).HasColumnName("EmpCNPJ");
+        builder.Property(e => e.EmpCnpj).HasMaxLength(14);
         builder.Property(e => e.EmpEstado).HasMaxLength(2);
         builder.Property(e => e.EmpNome).HasMaxLength(150);
     }

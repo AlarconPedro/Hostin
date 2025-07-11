@@ -20,6 +20,8 @@ public class GenericService<T> : IGenericService<T> where T : class
 
     public async Task<IEnumerable<T>> GetAll() => await _context.Set<T>().ToListAsync();
 
+    public async Task<IEnumerable<T>> GetWithFilter(Func<T, bool> filter) => await Task.FromResult(_context.Set<T>().Where(filter).ToList());
+
     public async Task<T> GetById(int id) => await _context.Set<T>().FindAsync(id);
 
     public async Task<T> Add(T entity)

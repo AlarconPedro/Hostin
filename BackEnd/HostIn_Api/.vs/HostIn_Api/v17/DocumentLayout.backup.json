@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\HostIn_Api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2D324C1D-FD6E-4385-90AF-FB017C802B3C}|HostIn_Api.csproj|c:\\desenvolvimento\\projetos\\hostin\\backend\\hostin_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D324C1D-FD6E-4385-90AF-FB017C802B3C}|HostIn_Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2D324C1D-FD6E-4385-90AF-FB017C802B3C}|HostIn_Api.csproj|c:\\desenvolvimento\\projetos\\hostin\\backend\\hostin_api\\hostin_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{2D324C1D-FD6E-4385-90AF-FB017C802B3C}|HostIn_Api.csproj|solutionrelative:hostin_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2D324C1D-FD6E-4385-90AF-FB017C802B3C}|HostIn_Api.csproj|c:\\desenvolvimento\\projetos\\hostin\\backend\\hostin_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{2D324C1D-FD6E-4385-90AF-FB017C802B3C}|HostIn_Api.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D324C1D-FD6E-4385-90AF-FB017C802B3C}|HostIn_Api.csproj|c:\\desenvolvimento\\projetos\\hostin\\backend\\hostin_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D324C1D-FD6E-4385-90AF-FB017C802B3C}|HostIn_Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E2E18E2B-AA9C-4BC9-973D-9C3A48398AA0}|..\\Hostin.Infra.Ioc\\Hostin.Infra.Ioc.csproj|c:\\desenvolvimento\\projetos\\hostin\\backend\\hostin.infra.ioc\\di\\di.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -48,7 +48,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -68,12 +68,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "HostIn_Api",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\HostIn_Api\\HostIn_Api.csproj",
               "RelativeDocumentMoniker": "HostIn_Api.csproj",
-              "ToolTip": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\HostIn_Api\\HostIn_Api.csproj*",
-              "RelativeToolTip": "HostIn_Api.csproj*",
+              "ToolTip": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\HostIn_Api\\HostIn_Api.csproj",
+              "RelativeToolTip": "HostIn_Api.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-07-11T02:01:07.728Z",
@@ -81,7 +81,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\HostIn_Api\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -159,13 +159,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\HostIn_Api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\HostIn_Api\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAgwCEAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T00:58:28.169Z",
               "EditorCaption": ""

@@ -9,4 +9,5 @@ namespace Hostin.Core.Interfaces;
 
 public interface IUsuarioService : IGenericService<TbUsuario>
 {
+    Task<>
 }

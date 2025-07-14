@@ -1,4 +1,4 @@
-﻿using HostIn.Core.Entities;
+﻿using Hostin.Core.Entities.Tabelas;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;

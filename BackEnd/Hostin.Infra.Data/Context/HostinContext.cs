@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using Hostin.Core.Entities.Tabelas;
 using Hostin.Infra.Data.Mappings;
-using HostIn.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace HostIn_Api;

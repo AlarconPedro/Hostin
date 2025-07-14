@@ -20,7 +20,7 @@ public class GenericService<T> : IGenericService<T> where T : class
 
     public async Task<IEnumerable<T>> GetAll() => await _context.Set<T>().ToListAsync();
 
-    public async Task<IEnumerable<T>> GetWithFilter(Func<T, bool> filter) => await Task.FromResult(_context.Set<T>().Where(filter).ToList());
+    public async Task<IEnumerable<T>> GetWithFilter(Func<T, bool> filter) => _context.Set<T>().Where(filter).ToList();
 
     public async Task<T> GetById(int id) => await _context.Set<T>().FindAsync(id);
 
@@ -29,7 +29,9 @@ public class GenericService<T> : IGenericService<T> where T : class
         if (entity == null)
             throw new ArgumentNullException(nameof(entity));
         await _context.Set<T>().AddAsync(entity);
+        
         await _context.SaveChangesAsync();
+        //retornar o objeto adicionado com o ID atualizado
         return entity;
 
         _context.Set<T>().Add(entity);

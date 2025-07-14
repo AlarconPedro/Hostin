@@ -1,4 +1,4 @@
-﻿using HostIn.Core.Entities;
+﻿using Hostin.Core.Entities.Tabelas;
 using System;
 using System.Collections.Generic;
 using System.Linq;

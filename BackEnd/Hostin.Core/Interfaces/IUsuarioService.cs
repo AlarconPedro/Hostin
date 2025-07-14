@@ -1,4 +1,5 @@
-﻿using HostIn.Core.Entities;
+﻿using Hostin.Core.Entities.Models;
+using Hostin.Core.Entities.Tabelas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,5 @@ namespace Hostin.Core.Interfaces;
 
 public interface IUsuarioService : IGenericService<TbUsuario>
 {
-    Task Login(string usuario, string senha);
+    Task<LoginModel> Login(string usuario, string senha);
 }

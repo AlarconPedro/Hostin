@@ -1,5 +1,5 @@
-﻿using Hostin.Core.Interfaces;
-using HostIn.Core.Entities;
+﻿using Hostin.Core.Entities.Tabelas;
+using Hostin.Core.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

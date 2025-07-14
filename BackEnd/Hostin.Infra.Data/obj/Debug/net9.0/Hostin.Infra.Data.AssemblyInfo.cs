@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hostin.Infra.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6014b02a1e6a7fc512709a1c34e3e9bb8da371f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b245c5c60bebb89ae5d4249ccc1b1c2713991937")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hostin.Infra.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hostin.Infra.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2,6 +2,7 @@
 using Hangfire.MemoryStorage;
 using Hostin.Core.Interfaces.Config;
 using Hostin.Infra.Data.Services;
+using Hostin.Infra.Data.Services.Config;
 using HostIn_Api;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;

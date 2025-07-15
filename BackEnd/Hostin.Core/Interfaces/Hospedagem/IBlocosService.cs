@@ -8,6 +8,6 @@ using System.Threading.Tasks;
 
 namespace Hostin.Core.Interfaces.Hospedagem;
 
-public interface IBlocosService : IGenericService<TbQuarto>
+public interface IBlocosService : IGenericService<TbBloco>
 {
 }

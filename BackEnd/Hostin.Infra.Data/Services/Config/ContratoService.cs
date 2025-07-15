@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hostin.Infra.Data.Services;
+namespace Hostin.Infra.Data.Services.Config;
 
-public class PessoasService : GenericService<TbPessoa>, IPessoasService
+public class ContratoService : GenericService<TbContrato>, IContratoService
 {
-    public PessoasService(HostinContext context) : base(context)
+    public ContratoService(HostinContext context) : base(context)
     {
     }
 }

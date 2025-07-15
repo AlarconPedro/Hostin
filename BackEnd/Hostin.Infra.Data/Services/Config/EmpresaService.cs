@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hostin.Infra.Data.Services;
+namespace Hostin.Infra.Data.Services.Config;
 
 public class EmpresaService : GenericService<TbEmpresa>, IEmpresaService
 {

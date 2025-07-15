@@ -8,6 +8,6 @@ using System.Threading.Tasks;
 
 namespace Hostin.Core.Interfaces.Hospedagem;
 
-internal interface IEventoService : IGenericService<TbEvento>
+public interface IEventoService : IGenericService<TbEvento>
 {
 }

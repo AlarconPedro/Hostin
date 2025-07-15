@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hostin.Infra.Data.Services;
+namespace Hostin.Infra.Data.Services.Config;
 
-public class TelaService : GenericService<TbTela>, ITelaService
+public class PessoasService : GenericService<TbPessoa>, IPessoasService
 {
-    public TelaService(HostinContext context) : base(context)
+    public PessoasService(HostinContext context) : base(context)
     {
     }
 }

@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\HostIn_Api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E2E18E2B-AA9C-4BC9-973D-9C3A48398AA0}|..\\Hostin.Infra.Ioc\\Hostin.Infra.Ioc.csproj|c:\\desenvolvimento\\projetos\\hostin\\backend\\hostin.infra.ioc\\di\\di.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2D324C1D-FD6E-4385-90AF-FB017C802B3C}|HostIn_Api.csproj|c:\\desenvolvimento\\projetos\\hostin\\backend\\hostin_api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D324C1D-FD6E-4385-90AF-FB017C802B3C}|HostIn_Api.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -43,9 +46,6 @@
       "AbsoluteMoniker": "D:0:0:{AEE189EC-3BA3-4E94-B6D1-520FCA9ACCF8}|..\\Hostin.Core\\Hostin.Core.csproj|c:\\desenvolvimento\\projetos\\hostin\\backend\\hostin.core\\interfaces\\iempresaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2E18E2B-AA9C-4BC9-973D-9C3A48398AA0}|..\\Hostin.Infra.Ioc\\Hostin.Infra.Ioc.csproj|c:\\desenvolvimento\\projetos\\hostin\\backend\\hostin.infra.ioc\\di\\di.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2D324C1D-FD6E-4385-90AF-FB017C802B3C}|HostIn_Api.csproj|c:\\desenvolvimento\\projetos\\hostin\\backend\\hostin_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D324C1D-FD6E-4385-90AF-FB017C802B3C}|HostIn_Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -64,7 +64,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -84,20 +84,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\HostIn_Api\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\HostIn_Api\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAIwEoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAIwEsAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-14T22:51:28.843Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TelaController.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\HostIn_Api\\Controllers\\TelaController.cs",
               "RelativeDocumentMoniker": "Controllers\\TelaController.cs",
@@ -110,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "EmpresaController.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\HostIn_Api\\Controllers\\EmpresaController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmpresaController.cs",
@@ -123,19 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoginModel.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\Models\\LoginModel.cs",
-              "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\Models\\LoginModel.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\Models\\LoginModel.cs",
-              "RelativeToolTip": "..\\Hostin.Core\\Entities\\Models\\LoginModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T15:57:00.245Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "IUsuarioService.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Interfaces\\IUsuarioService.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Interfaces\\IUsuarioService.cs",
@@ -148,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UsuarioService.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Data\\Services\\UsuarioService.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Infra.Data\\Services\\UsuarioService.cs",
@@ -161,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\HostIn_Api\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -173,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "GenericService.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Data\\Services\\GenericService.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Infra.Data\\Services\\GenericService.cs",
@@ -186,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "EmpresaService.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Data\\Services\\EmpresaService.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Infra.Data\\Services\\EmpresaService.cs",
@@ -199,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ITelaService.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Interfaces\\ITelaService.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Interfaces\\ITelaService.cs",
@@ -211,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "TelaService.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Data\\Services\\TelaService.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Infra.Data\\Services\\TelaService.cs",
@@ -223,7 +211,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DI.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Ioc\\DI\\DI.cs",
+              "RelativeDocumentMoniker": "..\\Hostin.Infra.Ioc\\DI\\DI.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Ioc\\DI\\DI.cs",
+              "RelativeToolTip": "..\\Hostin.Infra.Ioc\\DI\\DI.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAwwCAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T00:57:58.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "..\\Hostin.Core\\Entities\\Models\\LoginModel.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Entities\\Models\\LoginModel.cs",
+              "RelativeToolTip": "..\\Hostin.Core\\Entities\\Models\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T15:57:00.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "IEmpresaService.cs",
               "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Core\\Interfaces\\IEmpresaService.cs",
               "RelativeDocumentMoniker": "..\\Hostin.Core\\Interfaces\\IEmpresaService.cs",
@@ -268,18 +281,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-07-10T01:13:06.095Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DI.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Ioc\\DI\\DI.cs",
-              "RelativeDocumentMoniker": "..\\Hostin.Infra.Ioc\\DI\\DI.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Ioc\\DI\\DI.cs",
-              "RelativeToolTip": "..\\Hostin.Infra.Ioc\\DI\\DI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T00:57:58.771Z"
             }
           ]
         }

@@ -8,6 +8,6 @@ using System.Threading.Tasks;
 
 namespace Hostin.Core.Interfaces.Hospedagem;
 
-internal interface IComunidadeService : IGenericService<TbComunidade>
+public interface IComunidadeService : IGenericService<TbComunidade>
 {
 }

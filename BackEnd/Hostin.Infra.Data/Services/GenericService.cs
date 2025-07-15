@@ -1,4 +1,4 @@
-﻿using Hostin.Core.Interfaces;
+﻿using Hostin.Core.Interfaces.Config;
 using HostIn_Api;
 using Microsoft.EntityFrameworkCore;
 using System;

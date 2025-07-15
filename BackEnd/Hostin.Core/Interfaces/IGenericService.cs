@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hostin.Core.Interfaces;
+namespace Hostin.Core.Interfaces.Config;
 
 public interface IGenericService<T> where T : class
 {

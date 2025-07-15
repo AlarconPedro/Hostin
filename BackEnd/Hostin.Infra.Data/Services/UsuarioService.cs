@@ -1,6 +1,6 @@
 ﻿using Hostin.Core.Entities.Models;
 using Hostin.Core.Entities.Tabelas;
-using Hostin.Core.Interfaces;
+using Hostin.Core.Interfaces.Config;
 using Hostin.Infra.Data.Functions;
 using HostIn_Api;
 using Microsoft.EntityFrameworkCore;

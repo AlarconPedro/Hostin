@@ -1,5 +1,5 @@
 ﻿using Hostin.Core.Entities.Tabelas;
-using Hostin.Core.Interfaces;
+using Hostin.Core.Interfaces.Config;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -67,5 +67,16 @@ public class EmpresaController : ControllerBase
         {
             return BadRequest(ex.Message);
         }
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<ActionResult> DeleteEmpresa(int id)
+    {
+        var empresa = await _empresaService.Delete(id);
+        if (!empresa)
+        {
+            return NotFound($"Nenhuma Empresa Encontrada com o Id: {id}");
+        }
+        return NoContent(); // 204 No Content for successful deletion
     }
 }

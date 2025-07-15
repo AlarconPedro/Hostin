@@ -1,14 +1,17 @@
-﻿using System;
+﻿using Hangfire;
+using Hangfire.MemoryStorage;
+using Hostin.Core.Interfaces.Config;
+using Hostin.Infra.Data.Services;
+using HostIn_Api;
+using Microsoft.AspNetCore.Cors.Infrastructure;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Hangfire;
-using Hangfire.MemoryStorage;
-using HostIn_Api;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace Hostin.Infra.Ioc;
 
@@ -23,6 +26,11 @@ public static class DI
             options.UseSqlServer(configuration.GetConnectionString(connectionString),
                 b => b.MigrationsAssembly(typeof(HostinContext).Assembly.FullName));
         });
+
+        services.AddTransient(typeof(IGenericService<>), typeof(GenericService<>));
+        services.AddTransient<IEmpresaService, EmpresaService>();
+        services.AddTransient<IUsuarioService, UsuarioService>();
+        services.AddTransient<ITelaService, TelaService>();
 
         services.AddHangfire(config => config.UseMemoryStorage());
 

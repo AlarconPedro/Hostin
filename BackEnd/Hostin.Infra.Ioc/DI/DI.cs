@@ -3,15 +3,9 @@ using Hangfire.MemoryStorage;
 using Hostin.Core.Interfaces.Config;
 using Hostin.Infra.Data.Services;
 using HostIn_Api;
-using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Hostin.Infra.Ioc;
 

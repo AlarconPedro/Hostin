@@ -50,7 +50,7 @@
               "RelativeDocumentMoniker": "..\\Hostin.Infra.Ioc\\DI\\DI.cs",
               "ToolTip": "C:\\Desenvolvimento\\Projetos\\Hostin\\BackEnd\\Hostin.Infra.Ioc\\DI\\DI.cs",
               "RelativeToolTip": "..\\Hostin.Infra.Ioc\\DI\\DI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T00:57:58.771Z",
               "EditorCaption": ""
@@ -65,8 +65,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T00:58:28.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-09T00:58:28.169Z"
             },
             {
               "$type": "Document",
@@ -78,7 +77,8 @@
               "RelativeToolTip": "..\\Hostin.Infra.Data\\Context\\HostinContext.cs",
               "ViewState": "AgIAAH4AAAAAAAAAAAAwwI0AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T01:20:37.562Z"
+              "WhenOpened": "2025-07-08T01:20:37.562Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

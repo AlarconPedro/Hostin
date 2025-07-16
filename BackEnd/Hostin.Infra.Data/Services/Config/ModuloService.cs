@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Hostin.Infra.Data.Services.Config;
 
-public class ModuloService : GenericService<TbModulo>, IModuloSevice
+public class ModuloService : GenericService<TbModulo>, IModuloService
 {
     public ModuloService(HostinContext context) : base(context)
     {

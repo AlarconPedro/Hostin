@@ -1,5 +1,6 @@
 ﻿using Hostin.Core.Entities.Tabelas;
 using Hostin.Core.Interfaces.Config;
+using Hostin.Infra.Data.Services.Config;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,33 +10,33 @@ namespace HostIn_Api.Controllers.Config;
 [ApiController]
 public class CidadeController : ControllerBase
 {
-    private readonly ICidadeService _cidadeService;
+    private readonly ICidadeService _service;
 
     public CidadeController(ICidadeService cidadeService)
     {
-        _cidadeService = cidadeService;
+        _service = cidadeService;
     }
 
     [HttpGet]
-    public async Task<ActionResult> GetAllCidades()
+    public async Task<ActionResult> GetAll()
     {
-        var cidades = await _cidadeService.GetAll();
-        return Ok(cidades);
+        var retorno = await _service.GetAll();
+        return Ok(retorno);
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult> GetCidadeById(int id)
+    public async Task<ActionResult> GetById(int id)
     {
-        var cidade = await _cidadeService.GetById(id);
-        if (cidade == null)
+        var retorno = await _service.GetById(id);
+        if (retorno == null)
         {
             return NotFound($"Nenhuma Cidade Encontrada com o Id: {id}");
         }
-        return Ok(cidade);
+        return Ok(retorno);
     }
 
     [HttpPost]
-    public async Task<ActionResult> AddCidade(TbCidade cidade)
+    public async Task<ActionResult> Add(TbCidade cidade)
     {
         if (cidade == null)
         {
@@ -43,8 +44,8 @@ public class CidadeController : ControllerBase
         }
         try
         {
-            await _cidadeService.Add(cidade);
-            return CreatedAtAction(nameof(GetCidadeById), new { id = cidade.CidCodigo }, cidade);
+            await _service.Add(cidade);
+            return CreatedAtAction(nameof(GetById), new { id = cidade.CidCodigo }, cidade);
         }
         catch (InvalidOperationException ex)
         {
@@ -53,7 +54,7 @@ public class CidadeController : ControllerBase
     }
 
     [HttpPut]
-    public async Task<ActionResult> UpdateCidade(TbCidade cidade)
+    public async Task<ActionResult> Update(TbCidade cidade)
     {
         if (cidade == null)
         {
@@ -61,26 +62,22 @@ public class CidadeController : ControllerBase
         }
         try
         {
-            await _cidadeService.Update(cidade);
-            return NoContent();
+            return Ok(await _service.Update(cidade));
         }
-        catch (InvalidOperationException ex)
+        catch (Exception ex)
         {
-            return Conflict(ex.Message);
+            return BadRequest(ex.Message);
         }
     }
 
     [HttpDelete("{id}")]
-    public async Task<ActionResult> DeleteCidade(int id)
+    public async Task<ActionResult> Delete(int id)
     {
-        try
+        var retorno = await _service.Delete(id);
+        if (!retorno)
         {
-            await _cidadeService.Delete(id);
-            return NoContent();
+            return NotFound($"Nenhuma Cidade Encontrada com o Id: {id}");
         }
-        catch (InvalidOperationException ex)
-        {
-            return Conflict(ex.Message);
-        }
+        return NoContent(); // 204 No Content for successful deletion
     }
 }

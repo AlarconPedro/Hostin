@@ -9,51 +9,73 @@ namespace HostIn_Api.Controllers.Estoque;
 [ApiController]
 public class CategoriaController : ControllerBase
 {
-    private readonly ICategoriaService _categoriaService;
+    private readonly ICategoriaService _service;
     public CategoriaController(ICategoriaService categoriaService)
     {
-        _categoriaService = categoriaService;
+        _service = categoriaService;
     }
+
     [HttpGet]
-    public async Task<IActionResult> GetAllCategorias()
+    public async Task<ActionResult> GetAll()
     {
-        var categorias = await _categoriaService.GetAll();
-        return Ok(categorias);
+        var retorno = await _service.GetAll();
+        return Ok(retorno);
     }
+
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetCategoriaById(int id)
+    public async Task<ActionResult> GetById(int id)
     {
-        var categoria = await _categoriaService.GetById(id);
-        if (categoria == null)
+        var retorno = await _service.GetById(id);
+        if (retorno == null)
         {
             return NotFound($"Nenhuma Categoria Encontrada com o Id: {id}");
         }
-        return Ok(categoria);
+        return Ok(retorno);
     }
+
     [HttpPost]
-    public async Task<IActionResult> CreateCategoria([FromBody] TbCategoria categoria)
+    public async Task<ActionResult> Add(TbCategoria categoria)
     {
         if (categoria == null)
         {
-            return BadRequest("Categoria não pode ser nula.");
+            return BadRequest("Categoria cannot be null.");
         }
-        var createdCategoria = await _categoriaService.Add(categoria);
-        return CreatedAtAction(nameof(GetCategoriaById), new { id = createdCategoria.CatCodigo }, createdCategoria);
+        try
+        {
+            await _service.Add(categoria);
+            return CreatedAtAction(nameof(GetById), new { id = categoria.CatCodigo }, categoria);
+        }
+        catch (InvalidOperationException ex)
+        {
+            return Conflict(ex.Message);
+        }
     }
-    [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateCategoria(TbCategoria categoria)
+
+    [HttpPut]
+    public async Task<ActionResult> Update(TbCategoria categoria)
     {
         if (categoria == null)
         {
-            return BadRequest("Categoria inválida ou ID não corresponde.");
+            return BadRequest("Categoria cannot be null.");
         }
-        
-        var updatedCategoria = await _categoriaService.Update(categoria);
-        if (updatedCategoria == null)
+        try
         {
-            return NotFound($"Nenhuma Categoria Encontrada com o Id: {categoria.CatCodigo}");
+            return Ok(await _service.Update(categoria));
         }
-        
-        return Ok(updatedCategoria);
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<ActionResult> Delete(int id)
+    {
+        var retorno = await _service.Delete(id);
+        if (!retorno)
+        {
+            return NotFound($"Nenhuma Categoria Encontrada com o Id: {id}");
+        }
+        return NoContent(); // 204 No Content for successful deletion
     }
 }

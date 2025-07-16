@@ -11,56 +11,41 @@ namespace HostIn_Api.Controllers.Config;
 [ApiController]
 public class UsuarioController : ControllerBase
 {
-    private readonly IUsuarioService _usuarioService;
+    private readonly IUsuarioService _service;
     public UsuarioController(IUsuarioService usuarioService)
     {
-        _usuarioService = usuarioService;
+        _service = usuarioService;
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<TbUsuario>>> GetAllUsuarios()
+    public async Task<ActionResult> GetAll()
     {
-        var usuarios = await _usuarioService.GetAll();
-        return Ok(usuarios);
+        var retorno = await _service.GetAll();
+        return Ok(retorno);
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<TbUsuario>> GetUsuarioById(int id)
+    public async Task<ActionResult> GetById(int id)
     {
-        var usuario = await _usuarioService.GetById(id);
-        if (usuario == null)
+        var retorno = await _service.GetById(id);
+        if (retorno == null)
         {
-            return NotFound($"Nenhum Usuário Encontrado com o Id: {id}");
+            return NotFound($"Nenhum Usuario Encontrada com o Id: {id}");
         }
-        return Ok(usuario);
-    }
-
-    [HttpPost("login")]
-    public async Task<ActionResult<LoginModel>> Login(LoginRequest request)
-    {
-        if (request == null || string.IsNullOrEmpty(request.Email) || string.IsNullOrEmpty(request.Password))
-        {
-            return BadRequest("Usuário e senha são obrigatórios.");
-        }
-        var loginResult = await _usuarioService.Login(request.Email, request.Password);
-        if (loginResult == null)
-        {
-            return Unauthorized("Usuário ou senha inválidos.");
-        }
-        return Ok(loginResult);
+        return Ok(retorno);
     }
 
     [HttpPost]
-    public async Task<ActionResult<TbUsuario>> AddUsuario(TbUsuario usuario)
+    public async Task<ActionResult> Add(TbUsuario usuario)
     {
         if (usuario == null)
         {
-            return BadRequest("Usuário não pode ser nulo.");
+            return BadRequest("Usuario cannot be null.");
         }
         try
         {
-            await _usuarioService.Add(usuario);
-            return CreatedAtAction(nameof(GetUsuarioById), new { id = usuario.UsuCodigo }, usuario);
+            await _service.Add(usuario);
+            return CreatedAtAction(nameof(GetById), new { id = usuario.UsuCodigo }, usuario);
         }
         catch (InvalidOperationException ex)
         {
@@ -69,30 +54,29 @@ public class UsuarioController : ControllerBase
     }
 
     [HttpPut]
-    public async Task<ActionResult<TbUsuario>> UpdateUsuario(TbUsuario usuario)
+    public async Task<ActionResult> Update(TbUsuario usuario)
     {
         if (usuario == null)
         {
-            return BadRequest("Usuário não pode ser nulo.");
+            return BadRequest("Usuario cannot be null.");
         }
         try
         {
-            await _usuarioService.Update(usuario);
-            return Ok(usuario);
+            return Ok(await _service.Update(usuario));
         }
-        catch (InvalidOperationException ex)
+        catch (Exception ex)
         {
-            return Conflict(ex.Message);
+            return BadRequest(ex.Message);
         }
     }
 
     [HttpDelete("{id}")]
-    public async Task<ActionResult> DeleteUsuario(int id)
+    public async Task<ActionResult> Delete(int id)
     {
-        var usuario = await _usuarioService.Delete(id);
-        if (!usuario)
+        var retorno = await _service.Delete(id);
+        if (!retorno)
         {
-            return NotFound($"Nenhum Usuário encontrado com o Id: {id}");
+            return NotFound($"Nenhum Usuario Encontrado com o Id: {id}");
         }
         return NoContent(); // 204 No Content for successful deletion
     }

@@ -9,67 +9,74 @@ namespace HostIn_Api.Controllers.Estoque;
 [ApiController]
 public class ComprasItensController : ControllerBase
 {
-    private readonly IComprasItensService _comprasItensService;
+    private readonly IComprasItensService _service;
 
     public ComprasItensController(IComprasItensService comprasItensService)
     {
-        _comprasItensService = comprasItensService;
+        _service = comprasItensService;
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetAllComprasItens()
+    public async Task<ActionResult> GetAll()
     {
-        var comprasItens = await _comprasItensService.GetAll();
-        return Ok(comprasItens);
+        var retorno = await _service.GetAll();
+        return Ok(retorno);
     }
 
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetComprasItemById(int id)
+    public async Task<ActionResult> GetById(int id)
     {
-        var comprasItem = await _comprasItensService.GetById(id);
-        if (comprasItem == null)
+        var retorno = await _service.GetById(id);
+        if (retorno == null)
         {
-            return NotFound($"Nenhum Item de Compra Encontrado com o Id: {id}");
+            return NotFound($"Nenhuma Compra Encontrada com o Id: {id}");
         }
-        return Ok(comprasItem);
+        return Ok(retorno);
     }
 
     [HttpPost]
-    public async Task<IActionResult> CreateComprasItem(TbComprasIten comprasItem)
+    public async Task<ActionResult> Add(TbComprasIten compraItens)
     {
-        if (comprasItem == null)
+        if (compraItens == null)
         {
-            return BadRequest("Item de Compra não pode ser nulo.");
+            return BadRequest("Compra cannot be null.");
         }
-        var createdComprasItem = await _comprasItensService.Add(comprasItem);
-        return CreatedAtAction(nameof(GetComprasItemById), new { id = createdComprasItem.ComCodigo }, createdComprasItem);
+        try
+        {
+            await _service.Add(compraItens);
+            return CreatedAtAction(nameof(GetById), new { id = compraItens.ComCodigo }, compraItens);
+        }
+        catch (InvalidOperationException ex)
+        {
+            return Conflict(ex.Message);
+        }
     }
 
-    [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateComprasItem(TbComprasIten comprasItem)
+    [HttpPut]
+    public async Task<ActionResult> Update(TbComprasIten pessoa)
     {
-        if (comprasItem == null)
+        if (pessoa == null)
         {
-            return BadRequest("Item de Compra inválido ou ID não corresponde.");
+            return BadRequest("Compra cannot be null.");
         }
-        
-        var updatedComprasItem = await _comprasItensService.Update(comprasItem);
-        if (updatedComprasItem == null)
+        try
         {
-            return NotFound($"Nenhum Item de Compra Encontrado com o Id: {comprasItem.ComCodigo}");
+            return Ok(await _service.Update(pessoa));
         }
-        
-        return Ok(updatedComprasItem);
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
     }
 
     [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteComprasItem(int id)
+    public async Task<ActionResult> Delete(int id)
     {
-        var deleted = await _comprasItensService.Delete(id);
-        if (!deleted)
+        var retorno = await _service.Delete(id);
+        if (!retorno)
         {
-            return NotFound($"Nenhum Item de Compra Encontrado com o Id: {id}");
+            return NotFound($"Nenhuma Compra Encontrada com o Id: {id}");
         }
-        return NoContent();
+        return NoContent(); // 204 No Content for successful deletion
     }
 }

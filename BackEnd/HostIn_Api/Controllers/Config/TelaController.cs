@@ -9,33 +9,33 @@ namespace HostIn_Api.Controllers.Config;
 [ApiController]
 public class TelaController : ControllerBase
 {
-    private readonly ITelaService _telaService;
+    private readonly ITelaService _service;
 
     public TelaController(ITelaService telaService)
     {
-        _telaService = telaService;
+        _service = telaService;
     }
 
     [HttpGet]
-    public async Task<ActionResult> GetAllTelas()
+    public async Task<ActionResult> GetAll()
     {
-        var telas = await _telaService.GetAll();
-        return Ok(telas);
+        var retorno = await _service.GetAll();
+        return Ok(retorno);
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult> GetTelaById(int id)
+    public async Task<ActionResult> GetById(int id)
     {
-        var tela = await _telaService.GetById(id);
-        if (tela == null)
+        var retorno = await _service.GetById(id);
+        if (retorno == null)
         {
-            return NotFound($"Nenhuma Tela Encontrada com o Id: {id}");
+            return NotFound($"Nenhum Serviço Encontrada com o Id: {id}");
         }
-        return Ok(tela);
+        return Ok(retorno);
     }
 
     [HttpPost]
-    public async Task<ActionResult> AddTela(TbTela tela)
+    public async Task<ActionResult> Add(TbTela tela)
     {
         if (tela == null)
         {
@@ -43,8 +43,8 @@ public class TelaController : ControllerBase
         }
         try
         {
-            await _telaService.Add(tela);
-            return CreatedAtAction(nameof(GetTelaById), new { id = tela.TelCodigo }, tela);
+            await _service.Add(tela);
+            return CreatedAtAction(nameof(GetById), new { id = tela.TelCodigo }, tela);
         }
         catch (InvalidOperationException ex)
         {
@@ -53,28 +53,27 @@ public class TelaController : ControllerBase
     }
 
     [HttpPut]
-    public async Task<ActionResult> UpdateTela(TbTela tela)
+    public async Task<ActionResult> Update(TbTela pessoa)
     {
-        if (tela == null)
+        if (pessoa == null)
         {
             return BadRequest("Tela cannot be null.");
         }
         try
         {
-            await _telaService.Update(tela);
-            return NoContent(); // 204 No Content for successful update
+            return Ok(await _service.Update(pessoa));
         }
-        catch (InvalidOperationException ex)
+        catch (Exception ex)
         {
-            return Conflict(ex.Message);
+            return BadRequest(ex.Message);
         }
     }
 
     [HttpDelete("{id}")]
-    public async Task<ActionResult> DeleteTela(int id)
+    public async Task<ActionResult> Delete(int id)
     {
-        var deleted = await _telaService.Delete(id);
-        if (!deleted)
+        var retorno = await _service.Delete(id);
+        if (!retorno)
         {
             return NotFound($"Nenhuma Tela Encontrada com o Id: {id}");
         }

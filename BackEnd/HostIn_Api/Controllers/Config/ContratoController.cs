@@ -1,5 +1,6 @@
 ﻿using Hostin.Core.Entities.Tabelas;
 using Hostin.Core.Interfaces.Config;
+using Hostin.Infra.Data.Services.Config;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,33 +10,33 @@ namespace HostIn_Api.Controllers.Config;
 [ApiController]
 public class ContratoController : ControllerBase
 {
-    private readonly IContratoService _contratoService;
+    private readonly IContratoService _service;
 
     public ContratoController(IContratoService contratoService)
     {
-        _contratoService = contratoService;
+        _service = contratoService;
     }
 
     [HttpGet]
-    public async Task<ActionResult> GetAllContratos()
+    public async Task<ActionResult> GetAll()
     {
-        var contratos = await _contratoService.GetAll();
-        return Ok(contratos);
+        var retorno = await _service.GetAll();
+        return Ok(retorno);
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult> GetContratoById(int id)
+    public async Task<ActionResult> GetById(int id)
     {
-        var contrato = await _contratoService.GetById(id);
-        if (contrato == null)
+        var retorno = await _service.GetById(id);
+        if (retorno == null)
         {
-            return NotFound($"Nenhum Contrato Encontrado com o Id: {id}");
+            return NotFound($"Nenhuma Cidade Encontrada com o Id: {id}");
         }
-        return Ok(contrato);
+        return Ok(retorno);
     }
 
     [HttpPost]
-    public async Task<ActionResult> AddContrato(TbContrato contrato)
+    public async Task<ActionResult> Add(TbContrato contrato)
     {
         if (contrato == null)
         {
@@ -43,8 +44,8 @@ public class ContratoController : ControllerBase
         }
         try
         {
-            await _contratoService.Add(contrato);
-            return CreatedAtAction(nameof(GetContratoById), new { id = contrato.CntCodigo }, contrato);
+            await _service.Add(contrato);
+            return CreatedAtAction(nameof(GetById), new { id = contrato.CntCodigo }, contrato);
         }
         catch (InvalidOperationException ex)
         {
@@ -53,7 +54,7 @@ public class ContratoController : ControllerBase
     }
 
     [HttpPut]
-    public async Task<ActionResult> UpdateContrato(TbContrato contrato)
+    public async Task<ActionResult> Update(TbContrato contrato)
     {
         if (contrato == null)
         {
@@ -61,26 +62,22 @@ public class ContratoController : ControllerBase
         }
         try
         {
-            await _contratoService.Update(contrato);
-            return NoContent();
+            return Ok(await _service.Update(contrato));
         }
-        catch (InvalidOperationException ex)
+        catch (Exception ex)
         {
-            return Conflict(ex.Message);
+            return BadRequest(ex.Message);
         }
     }
 
     [HttpDelete("{id}")]
-    public async Task<ActionResult> DeleteContrato(int id)
+    public async Task<ActionResult> Delete(int id)
     {
-        try
+        var retorno = await _service.Delete(id);
+        if (!retorno)
         {
-            await _contratoService.Delete(id);
-            return NoContent();
+            return NotFound($"Nenhum Contrato Encontrado com o Id: {id}");
         }
-        catch (InvalidOperationException ex)
-        {
-            return Conflict(ex.Message);
-        }
+        return NoContent(); // 204 No Content for successful deletion
     }
 }

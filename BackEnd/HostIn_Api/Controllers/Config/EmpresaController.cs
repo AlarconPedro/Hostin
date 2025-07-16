@@ -1,5 +1,6 @@
 ﻿using Hostin.Core.Entities.Tabelas;
 using Hostin.Core.Interfaces.Config;
+using Hostin.Infra.Data.Services.Config;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,42 +10,42 @@ namespace HostIn_Api.Controllers.Config;
 [ApiController]
 public class EmpresaController : ControllerBase
 {
-    private readonly IEmpresaService _empresaService;
+    private readonly IEmpresaService _service;
 
     public EmpresaController(IEmpresaService empresaService)
     {
-        _empresaService = empresaService;
+        _service = empresaService;
     }
 
     [HttpGet]
-    public async Task<ActionResult> GetAllEmpresas()
+    public async Task<ActionResult> GetAll()
     {
-        var empresas = await _empresaService.GetAll();
-        return Ok(empresas);
+        var retorno = await _service.GetAll();
+        return Ok(retorno);
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult> GetEmpresaById(int id)
+    public async Task<ActionResult> GetById(int id)
     {
-        var empresa = await _empresaService.GetById(id);
-        if (empresa == null)
+        var retorno = await _service.GetById(id);
+        if (retorno == null)
         {
             return NotFound($"Nenhuma Empresa Encontrada com o Id: {id}");
         }
-        return Ok(empresa);
+        return Ok(retorno);
     }
 
     [HttpPost]
-    public async Task<ActionResult> AddEmpresa(TbEmpresa empresa)
+    public async Task<ActionResult> Add(TbComprasItens empresa)
     {
         if (empresa == null)
         {
-            return BadRequest("Empresa cannot be null.");
+            return BadRequest("Cidade cannot be null.");
         }
         try
         {
-            await _empresaService.AddEmpresa(empresa);
-            return CreatedAtAction(nameof(GetEmpresaById), new { id = empresa.EmpCodigo }, empresa);
+            await _service.Add(empresa);
+            return CreatedAtAction(nameof(GetById), new { id = empresa.EmpCodigo }, empresa);
         }
         catch (InvalidOperationException ex)
         {
@@ -53,15 +54,15 @@ public class EmpresaController : ControllerBase
     }
 
     [HttpPut]
-    public async Task<ActionResult> UpdateEmpresa(TbEmpresa empresa)
+    public async Task<ActionResult> Update(TbComprasItens empresa)
     {
         if (empresa == null)
         {
-            return BadRequest("Empresa cannot be null.");
+            return BadRequest("Cidade cannot be null.");
         }
         try
         {
-            return Ok(await _empresaService.Update(empresa));
+            return Ok(await _service.Update(empresa));
         }
         catch (Exception ex)
         {
@@ -70,10 +71,10 @@ public class EmpresaController : ControllerBase
     }
 
     [HttpDelete("{id}")]
-    public async Task<ActionResult> DeleteEmpresa(int id)
+    public async Task<ActionResult> Delete(int id)
     {
-        var empresa = await _empresaService.Delete(id);
-        if (!empresa)
+        var retorno = await _service.Delete(id);
+        if (!retorno)
         {
             return NotFound($"Nenhuma Empresa Encontrada com o Id: {id}");
         }

@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace Hostin.Infra.Data.Services.Hospedagem;
 
-internal class EnventoDespesasService : GenericService<TbEventoDespesa>, IEventoDespesasService
+internal class EventoDespesasService : GenericService<TbEventoDespesa>, IEventoDespesasService
 {
-    public EnventoDespesasService(HostinContext context) : base(context)
+    public EventoDespesasService(HostinContext context) : base(context)
     {
     }
 }

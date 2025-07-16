@@ -9,70 +9,75 @@ namespace HostIn_Api.Controllers.Config;
 [ApiController]
 public class ServicosController : ControllerBase
 {
-    private readonly IGenericService<TbServico> _servicoService;
+    private readonly IServicosService _service;
 
-    public ServicosController(IGenericService<TbServico> servicoService)
+    public ServicosController(IServicosService servicoService)
     {
-        _servicoService = servicoService;
+        _service = servicoService;
     }
 
+
     [HttpGet]
-    public async Task<IActionResult> GetAllServicos()
+    public async Task<ActionResult> GetAll()
     {
-        var servicos = await _servicoService.GetAll();
-        return Ok(servicos);
+        var retorno = await _service.GetAll();
+        return Ok(retorno);
     }
 
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetServicoById(int id)
+    public async Task<ActionResult> GetById(int id)
     {
-        var servico = await _servicoService.GetById(id);
-        if (servico == null)
+        var retorno = await _service.GetById(id);
+        if (retorno == null)
         {
-            return NotFound();
+            return NotFound($"Nenhum Serviço Encontrada com o Id: {id}");
         }
-        return Ok(servico);
+        return Ok(retorno);
     }
 
     [HttpPost]
-    public async Task<IActionResult> CreateServico([FromBody] TbServico servico)
+    public async Task<ActionResult> Add(TbServico servico)
     {
         if (servico == null)
         {
-            return BadRequest("Serviço não pode ser nulo.");
+            return BadRequest("Serviço cannot be null.");
         }
-        var createdServico = await _servicoService.Add(servico);
-        return CreatedAtAction(nameof(GetServicoById), new { id = createdServico.EmpCodigo }, createdServico);
-    }
-
-    [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateServico(TbServico servico)
-    {
-        if (servico == null)
-        {
-            return BadRequest("Serviço inválido ou ID não corresponde.");
-        }
-        
-        var updatedServico = await _servicoService.Update(servico);
-        if (updatedServico == null)
-        {
-            return NotFound();
-        }
-        
-        return Ok(updatedServico);
-    }
-
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteServico(int id)
-    {
         try
         {
-            await _servicoService.Delete(id);
-            return NoContent();
+            await _service.Add(servico);
+            return CreatedAtAction(nameof(GetById), new { id = servico.SerCodigo }, servico);
         }
         catch (InvalidOperationException ex)
         {
             return Conflict(ex.Message);
         }
+    }
+
+    [HttpPut]
+    public async Task<ActionResult> Update(TbServico pessoa)
+    {
+        if (pessoa == null)
+        {
+            return BadRequest("Serviço cannot be null.");
+        }
+        try
+        {
+            return Ok(await _service.Update(pessoa));
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<ActionResult> Delete(int id)
+    {
+        var retorno = await _service.Delete(id);
+        if (!retorno)
+        {
+            return NotFound($"Nenhum Serviço Encontrado com o Id: {id}");
+        }
+        return NoContent(); // 204 No Content for successful deletion
     }
 }

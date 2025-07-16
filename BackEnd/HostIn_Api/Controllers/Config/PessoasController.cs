@@ -9,30 +9,33 @@ namespace HostIn_Api.Controllers.Config;
 [ApiController]
 public class PessoasController : ControllerBase
 {
-    private readonly IPessoasService _pessoaService;
+    private readonly IPessoasService _service;
 
     public PessoasController(IPessoasService pessoaService)
     {
-        _pessoaService = pessoaService;
+        _service = pessoaService;
     }
+
     [HttpGet]
-    public async Task<ActionResult> GetAllPessoas()
+    public async Task<ActionResult> GetAll()
     {
-        var pessoas = await _pessoaService.GetAll();
-        return Ok(pessoas);
+        var retorno = await _service.GetAll();
+        return Ok(retorno);
     }
+
     [HttpGet("{id}")]
-    public async Task<ActionResult> GetPessoaById(int id)
+    public async Task<ActionResult> GetById(int id)
     {
-        var pessoa = await _pessoaService.GetById(id);
-        if (pessoa == null)
+        var retorno = await _service.GetById(id);
+        if (retorno == null)
         {
             return NotFound($"Nenhuma Pessoa Encontrada com o Id: {id}");
         }
-        return Ok(pessoa);
+        return Ok(retorno);
     }
+
     [HttpPost]
-    public async Task<ActionResult> AddPessoa(TbPessoa pessoa)
+    public async Task<ActionResult> Add(TbPessoa pessoa)
     {
         if (pessoa == null)
         {
@@ -40,42 +43,40 @@ public class PessoasController : ControllerBase
         }
         try
         {
-            await _pessoaService.Add(pessoa);
-            return CreatedAtAction(nameof(GetPessoaById), new { id = pessoa.PesCodigo }, pessoa);
+            await _service.Add(pessoa);
+            return CreatedAtAction(nameof(GetById), new { id = pessoa.PesCodigo }, pessoa);
         }
         catch (InvalidOperationException ex)
         {
             return Conflict(ex.Message);
         }
     }
+
     [HttpPut]
-    public async Task<ActionResult> UpdatePessoa(TbPessoa pessoa)
+    public async Task<ActionResult> Update(TbPessoa pessoa)
     {
         if (pessoa == null)
         {
-            return BadRequest("Pessoa cannot be null.");
+            return BadRequest("Cidade cannot be null.");
         }
         try
         {
-            await _pessoaService.Update(pessoa);
-            return NoContent();
+            return Ok(await _service.Update(pessoa));
         }
-        catch (InvalidOperationException ex)
+        catch (Exception ex)
         {
-            return Conflict(ex.Message);
+            return BadRequest(ex.Message);
         }
     }
+
     [HttpDelete("{id}")]
-    public async Task<ActionResult> DeletePessoa(int id)
+    public async Task<ActionResult> Delete(int id)
     {
-        try
+        var retorno = await _service.Delete(id);
+        if (!retorno)
         {
-            await _pessoaService.Delete(id);
-            return NoContent();
+            return NotFound($"Nenhuma Empresa Encontrada com o Id: {id}");
         }
-        catch (InvalidOperationException ex)
-        {
-            return NotFound(ex.Message);
-        }
+        return NoContent(); // 204 No Content for successful deletion
     }
 }

@@ -9,72 +9,72 @@ namespace HostIn_Api.Controllers.Config;
 [ApiController]
 public class ModuloController : ControllerBase
 {
-    private readonly IModuloService _moduloService;
+    private readonly IModuloService _service;
     public ModuloController(IModuloService moduloService)
     {
-        _moduloService = moduloService;
+        _service = moduloService;
     }
     [HttpGet]
-    public async Task<ActionResult> GetAllModulos()
+    public async Task<ActionResult> GetAll()
     {
-        var modulos = await _moduloService.GetAll();
-        return Ok(modulos);
+        var retorno = await _service.GetAll();
+        return Ok(retorno);
     }
+
     [HttpGet("{id}")]
-    public async Task<ActionResult> GetModuloById(int id)
+    public async Task<ActionResult> GetById(int id)
     {
-        var modulo = await _moduloService.GetById(id);
-        if (modulo == null)
+        var retorno = await _service.GetById(id);
+        if (retorno == null)
         {
-            return NotFound($"Nenhum Módulo Encontrado com o Id: {id}");
+            return NotFound($"Nenhum Modulo Encontrada com o Id: {id}");
         }
-        return Ok(modulo);
+        return Ok(retorno);
     }
+
     [HttpPost]
-    public async Task<ActionResult> AddModulo(TbModulo modulo)
+    public async Task<ActionResult> Add(TbModulo modulo)
     {
         if (modulo == null)
         {
-            return BadRequest("Módulo não pode ser nulo.");
+            return BadRequest("Modulo cannot be null.");
         }
         try
         {
-            await _moduloService.Add(modulo);
-            return CreatedAtAction(nameof(GetModuloById), new { id = modulo.ModCodigo }, modulo);
+            await _service.Add(modulo);
+            return CreatedAtAction(nameof(GetById), new { id = modulo.ModCodigo }, modulo);
         }
         catch (InvalidOperationException ex)
         {
             return Conflict(ex.Message);
         }
     }
+
     [HttpPut]
-    public async Task<ActionResult> UpdateModulo(TbModulo modulo)
+    public async Task<ActionResult> Update(TbModulo modulo)
     {
         if (modulo == null)
         {
-            return BadRequest("Módulo não pode ser nulo.");
+            return BadRequest("Modulo cannot be null.");
         }
         try
         {
-            await _moduloService.Update(modulo);
-            return NoContent();
+            return Ok(await _service.Update(modulo));
         }
-        catch (InvalidOperationException ex)
+        catch (Exception ex)
         {
-            return Conflict(ex.Message);
+            return BadRequest(ex.Message);
         }
     }
+
     [HttpDelete("{id}")]
-    public async Task<ActionResult> DeleteModulo(int id)
+    public async Task<ActionResult> Delete(int id)
     {
-        try
+        var retorno = await _service.Delete(id);
+        if (!retorno)
         {
-            await _moduloService.Delete(id);
-            return NoContent();
+            return NotFound($"Nenhum Modulo Encontrada com o Id: {id}");
         }
-        catch (InvalidOperationException ex)
-        {
-            return NotFound(ex.Message);
-        }
+        return NoContent(); // 204 No Content for successful deletion
     }
 }

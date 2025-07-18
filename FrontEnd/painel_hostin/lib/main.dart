@@ -1,17 +1,31 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import 'package:painel_hostin/classes/classes.dart';
 import 'package:painel_hostin/ui/login_page.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  Intl.defaultLocale = 'pt_BR';
   runApp(
-    CupertinoApp(
+    MaterialApp(
       home: const LoginPage(),
-      theme: CupertinoThemeData(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
         brightness: Brightness.light,
-        primaryColor: Colors.blue,
-        scaffoldBackgroundColor: Colors.white,
+        primaryColor: Cores.preto,
+        scaffoldBackgroundColor: Cores.branco,
       ),
     ),
+    // CupertinoApp(w
+    //   home: const LoginPage(),
+    //   debugShowCheckedModeBanner: false,
+    //   theme: CupertinoThemeData(
+    //     brightness: Brightness.light,
+    //     primaryColor: Cores.preto,
+    //     scaffoldBackgroundColor: Cores.branco,
+    //   ),
+    // ),
   );
 }
 

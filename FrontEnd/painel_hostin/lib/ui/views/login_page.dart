@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:painel_hostin/widgets/widgets.dart';
 
-import '../classes/classes.dart';
+import '../../classes/classes.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -37,6 +37,10 @@ class _LoginPageState extends State<LoginPage> {
           decoration: const BoxDecoration(
             color: Cores.branco,
             borderRadius: BorderRadius.all(Radius.circular(10)),
+            image: DecorationImage(
+              image: AssetImage('images/caminho.jpg'),
+              fit: BoxFit.cover,
+            ),
             boxShadow: [
               BoxShadow(
                 color: Colors.black12,

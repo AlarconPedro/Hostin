@@ -30,151 +30,164 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Container(
-          width: 450,
-          height: 450,
-          decoration: const BoxDecoration(
-            color: Cores.branco,
-            borderRadius: BorderRadius.all(Radius.circular(10)),
-            image: DecorationImage(
-              image: AssetImage('images/caminho.jpg'),
-              fit: BoxFit.cover,
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black12,
-                blurRadius: 10,
-                offset: Offset(0, 5),
-              ),
-            ],
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            opacity: 0.2,
+            image: AssetImage('images/caminho.jpg'),
+            fit: BoxFit.cover,
           ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Container(
-                margin: const EdgeInsets.only(top: 25),
-                height: 100,
-                decoration: const BoxDecoration(
-                  image: DecorationImage(image: AssetImage('images/logo.png')),
+        ),
+        child: Center(
+          child: Container(
+            width: 450,
+            height: 450,
+            decoration: const BoxDecoration(
+              color: Cores.branco,
+              borderRadius: BorderRadius.all(Radius.circular(10)),
+
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black12,
+                  blurRadius: 10,
+                  offset: Offset(0, 5),
                 ),
-              ),
-              Container(
-                margin: const EdgeInsets.symmetric(horizontal: 25, vertical: 5),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Form(
-                      key: key,
-                      // autovalidateMode: AutovalidateMode.onUserInteraction,
-                      child: Column(
-                        children: [
-                          campoTexto(
-                            controller: emailController,
-                            labelText: 'E-mail',
-                            hintText: 'Digite seu e-mail',
-                            validator: (value) {
-                              if (value == null ||
-                                  value.isEmpty ||
-                                  !value.contains('@') ||
-                                  !value.contains('.') ||
-                                  !value.contains('com') ||
-                                  value.length < 10) {
-                                return 'Por favor, digite seu e-mail';
-                              }
-                              return "";
-                            },
-                          ),
-                          const SizedBox(height: 10),
-                          campoTexto(
-                            controller: passwordController,
-                            labelText: 'Senha',
-                            hintText: 'Digite sua senha',
-                            prefixIcon: Icons.lock,
-                            obscureText: true,
-                            validator: (value) {
-                              if (value == null ||
-                                  value.isEmpty ||
-                                  value.length < 6) {
-                                return 'Por favor, digite uma senha válida';
-                              }
-                              return "";
-                            },
-                          ),
-                        ],
-                      ),
-                    ),
-                    const SizedBox(height: 10),
-                    Text(
-                      errorMessage,
-                      style: const TextStyle(color: Colors.red),
-                    ),
-                    Text(
-                      successMessage,
-                      style: const TextStyle(color: Colors.green),
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 10),
-                child: ElevatedButton(
-                  onPressed: () async {
-                    // TextInput.finishAutofillContext();
-                    if (key.currentState!.validate()) {
-                      successMessage = 'Logando...';
-                      //   // setState(() => carregando = true);
-                      //   FirebaseAuth.instance
-                      //       .signInWithEmailAndPassword(
-                      //         email: emailController.text,
-                      //         password: passwordController.text,
-                      //       )
-                      //       .then((value) async {
-                      //         var retorno = await verificaLogin();
-                      //         if (retorno != "") {
-                      //           await logar(await FirebaseAPI.getUID() ?? "");
-                      //         }
-                      //       })
-                      // .catchError((error) {
-                      //   errorMessage =
-                      //       'Erro ao autenticar usuário, verifique e-mail e senha e tente novamente';
-                      // });
-                    } else {
-                      errorMessage =
-                          'Por favor, preencha todos os campos corretamente';
-                    }
-                  },
-                  style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white,
-                    backgroundColor: Cores.verdeEscuro,
-                    fixedSize: const Size(150, 40),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+              ],
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  margin: const EdgeInsets.only(top: 25),
+                  height: 100,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage('images/logo.png'),
                     ),
                   ),
-                  child:
-                      carregando
-                          ? const CupertinoActivityIndicator(
-                            color: Cores.branco,
-                          )
-                          : const Text('Logar'),
                 ),
-              ),
-              TextButton(
-                style: TextButton.styleFrom(foregroundColor: Cores.cinzaEscuro),
-                onPressed: () {
-                  if (emailController.text.isEmpty) {
-                    // setState(() {
-                    errorMessage = 'Por favor, digite seu e-mail';
-                    // });
-                  }
-                  // esqueceuSenha();
-                },
-                onHover: (value) {},
-                child: const Text('Esqueceu a senha?'),
-              ),
-              const SizedBox(height: 20),
-            ],
+                Container(
+                  margin: const EdgeInsets.symmetric(
+                    horizontal: 25,
+                    vertical: 5,
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Form(
+                        key: key,
+                        // autovalidateMode: AutovalidateMode.onUserInteraction,
+                        child: Column(
+                          children: [
+                            campoTexto(
+                              controller: emailController,
+                              labelText: 'E-mail',
+                              hintText: 'Digite seu e-mail',
+                              validator: (value) {
+                                if (value == null ||
+                                    value.isEmpty ||
+                                    !value.contains('@') ||
+                                    !value.contains('.') ||
+                                    !value.contains('com') ||
+                                    value.length < 10) {
+                                  return 'Por favor, digite seu e-mail';
+                                }
+                                return "";
+                              },
+                            ),
+                            const SizedBox(height: 10),
+                            campoTexto(
+                              controller: passwordController,
+                              labelText: 'Senha',
+                              hintText: 'Digite sua senha',
+                              prefixIcon: Icons.lock,
+                              obscureText: true,
+                              validator: (value) {
+                                if (value == null ||
+                                    value.isEmpty ||
+                                    value.length < 6) {
+                                  return 'Por favor, digite uma senha válida';
+                                }
+                                return "";
+                              },
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Text(
+                        errorMessage,
+                        style: const TextStyle(color: Colors.red),
+                      ),
+                      Text(
+                        successMessage,
+                        style: const TextStyle(color: Colors.green),
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  child: ElevatedButton(
+                    onPressed: () async {
+                      // TextInput.finishAutofillContext();
+                      if (key.currentState!.validate()) {
+                        successMessage = 'Logando...';
+                        //   // setState(() => carregando = true);
+                        //   FirebaseAuth.instance
+                        //       .signInWithEmailAndPassword(
+                        //         email: emailController.text,
+                        //         password: passwordController.text,
+                        //       )
+                        //       .then((value) async {
+                        //         var retorno = await verificaLogin();
+                        //         if (retorno != "") {
+                        //           await logar(await FirebaseAPI.getUID() ?? "");
+                        //         }
+                        //       })
+                        // .catchError((error) {
+                        //   errorMessage =
+                        //       'Erro ao autenticar usuário, verifique e-mail e senha e tente novamente';
+                        // });
+                      } else {
+                        errorMessage =
+                            'Por favor, preencha todos os campos corretamente';
+                      }
+                    },
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.white,
+                      backgroundColor: Cores.verdeEscuro,
+                      fixedSize: const Size(150, 40),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                    child:
+                        carregando
+                            ? const CupertinoActivityIndicator(
+                              color: Cores.branco,
+                            )
+                            : const Text('Logar'),
+                  ),
+                ),
+                TextButton(
+                  style: TextButton.styleFrom(
+                    foregroundColor: Cores.cinzaEscuro,
+                  ),
+                  onPressed: () {
+                    if (emailController.text.isEmpty) {
+                      // setState(() {
+                      errorMessage = 'Por favor, digite seu e-mail';
+                      // });
+                    }
+                    // esqueceuSenha();
+                  },
+                  onHover: (value) {},
+                  child: const Text('Esqueceu a senha?'),
+                ),
+                const SizedBox(height: 20),
+              ],
+            ),
           ),
         ),
       ),

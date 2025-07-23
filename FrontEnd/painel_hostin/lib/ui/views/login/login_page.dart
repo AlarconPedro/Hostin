@@ -12,8 +12,6 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  late PageController _pageController;
-
   GlobalKey<FormState> key = GlobalKey<FormState>();
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
@@ -22,32 +20,15 @@ class _LoginPageState extends State<LoginPage> {
   bool carregando = false;
 
   @override
-  void initState() {
-    super.initState();
-    _pageController = PageController();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:
-      // Container(
-      //   decoration: const BoxDecoration(
-      //     image: DecorationImage(
-      //       opacity: 0.2,
-      //       image: AssetImage('images/caminho.jpg'),
-      //       fit: BoxFit.cover,
-      //     ),
-      //   ),
-      //   child:
-      Center(
+      body: Center(
         child: Container(
           width: 450,
           height: 450,
           decoration: const BoxDecoration(
             color: Cores.branco,
             borderRadius: BorderRadius.all(Radius.circular(10)),
-
             boxShadow: [
               BoxShadow(
                 color: Colors.black12,
@@ -63,7 +44,9 @@ class _LoginPageState extends State<LoginPage> {
                 margin: const EdgeInsets.only(top: 25),
                 height: 100,
                 decoration: const BoxDecoration(
-                  image: DecorationImage(image: AssetImage('images/logo.png')),
+                  image: DecorationImage(
+                    image: AssetImage('images/banner.png'),
+                  ),
                 ),
               ),
               Container(

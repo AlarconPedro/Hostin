@@ -10,6 +10,10 @@ class SelectEmpresa extends StatefulWidget {
 class _SelectEmpresaState extends State<SelectEmpresa> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Container(
+      child: Center(
+        child: Text('Selecione a empresa desejada para continuar.'),
+      ),
+    );
   }
 }

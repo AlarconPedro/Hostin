@@ -1,15 +1,17 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:painel_hostin/classes/classes.dart';
-import 'package:painel_hostin/ui/views/login/login_page.dart';
+import 'package:painel_hostin/di/di_controllers.dart';
+import 'package:painel_hostin/ui/views/login/login.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   Intl.defaultLocale = 'pt_BR';
+
+  setupEntities();
   runApp(
     MaterialApp(
-      home: const LoginPage(),
+      home: Login(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,

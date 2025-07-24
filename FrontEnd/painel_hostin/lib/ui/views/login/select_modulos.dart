@@ -10,6 +10,11 @@ class SelectModulos extends StatefulWidget {
 class _SelectModulosState extends State<SelectModulos> {
   @override
   Widget build(BuildContext context) {
-    return 
+    return Scaffold(
+      appBar: AppBar(title: const Text('Seleção de Módulos')),
+      body: Center(
+        child: Text('Selecione os módulos desejados para continuar.'),
+      ),
+    );
   }
 }

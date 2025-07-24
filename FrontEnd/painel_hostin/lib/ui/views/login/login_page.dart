@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:painel_hostin/widgets/widgets.dart';
 
 import '../../../classes/classes.dart';
+import '../../../di/di_controllers.dart';
+import '../../controllers/controllers.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -18,6 +20,8 @@ class _LoginPageState extends State<LoginPage> {
   String errorMessage = '';
   String successMessage = '';
   bool carregando = false;
+
+  final loginController = getIt<LoginController>();
 
   @override
   Widget build(BuildContext context) {
@@ -110,29 +114,30 @@ class _LoginPageState extends State<LoginPage> {
                 padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: ElevatedButton(
                   onPressed: () async {
-                    // TextInput.finishAutofillContext();
-                    if (key.currentState!.validate()) {
-                      successMessage = 'Logando...';
-                      //   // setState(() => carregando = true);
-                      //   FirebaseAuth.instance
-                      //       .signInWithEmailAndPassword(
-                      //         email: emailController.text,
-                      //         password: passwordController.text,
-                      //       )
-                      //       .then((value) async {
-                      //         var retorno = await verificaLogin();
-                      //         if (retorno != "") {
-                      //           await logar(await FirebaseAPI.getUID() ?? "");
-                      //         }
-                      //       })
-                      // .catchError((error) {
-                      //   errorMessage =
-                      //       'Erro ao autenticar usuário, verifique e-mail e senha e tente novamente';
-                      // });
-                    } else {
-                      errorMessage =
-                          'Por favor, preencha todos os campos corretamente';
-                    }
+                    loginController.selectUsuario(1);
+                    // // TextInput.finishAutofillContext();
+                    // if (key.currentState!.validate()) {
+                    //   successMessage = 'Logando...';
+                    //   //   // setState(() => carregando = true);
+                    //   //   FirebaseAuth.instance
+                    //   //       .signInWithEmailAndPassword(
+                    //   //         email: emailController.text,
+                    //   //         password: passwordController.text,
+                    //   //       )
+                    //   //       .then((value) async {
+                    //   //         var retorno = await verificaLogin();
+                    //   //         if (retorno != "") {
+                    //   //           await logar(await FirebaseAPI.getUID() ?? "");
+                    //   //         }
+                    //   //       })
+                    //   // .catchError((error) {
+                    //   //   errorMessage =
+                    //   //       'Erro ao autenticar usuário, verifique e-mail e senha e tente novamente';
+                    //   // });
+                    // } else {
+                    //   errorMessage =
+                    //       'Por favor, preencha todos os campos corretamente';
+                    // }
                   },
                   style: ElevatedButton.styleFrom(
                     foregroundColor: Colors.white,
@@ -153,11 +158,12 @@ class _LoginPageState extends State<LoginPage> {
               TextButton(
                 style: TextButton.styleFrom(foregroundColor: Cores.cinzaEscuro),
                 onPressed: () {
-                  if (emailController.text.isEmpty) {
-                    // setState(() {
-                    errorMessage = 'Por favor, digite seu e-mail';
-                    // });
-                  }
+                  // if (emailController.text.isEmpty) {
+                  // setState(() {
+                  // errorMessage = 'Por favor, digite seu e-mail';
+                  // });
+                  // }
+                  loginController.selectUsuario(1);
                   // esqueceuSenha();
                 },
                 onHover: (value) {},

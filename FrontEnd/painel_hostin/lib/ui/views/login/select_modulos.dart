@@ -11,9 +11,23 @@ class _SelectModulosState extends State<SelectModulos> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Seleção de Módulos')),
       body: Center(
-        child: Text('Selecione os módulos desejados para continuar.'),
+        child: Container(
+          width: 450,
+          height: 450,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: const BorderRadius.all(Radius.circular(10)),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black12,
+                blurRadius: 10,
+                offset: const Offset(0, 5),
+              ),
+            ],
+          ),
+          child: const Text('Select Modulos'),
+        ),
       ),
     );
   }

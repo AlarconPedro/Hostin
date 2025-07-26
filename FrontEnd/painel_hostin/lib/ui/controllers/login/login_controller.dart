@@ -1,7 +1,12 @@
 import 'package:flutter/widgets.dart';
-import 'package:painel_hostin/ui/controllers/controllers.dart';
 
-class LoginController extends Config {
+import '../../../di/di_controllers.dart';
+import '../config.dart';
+// import 'package:painel_hostin/ui/controllers/controllers.dart';
+
+class LoginController {
+  final config = getIt<Config>();
+
   final PageController pageController = PageController();
 
   void dispose() {
@@ -30,17 +35,17 @@ class LoginController extends Config {
 
   // Selecionar módulo, empresa ou usuário
   void selectModulo(int modulo) {
-    setModuloSelecionado(modulo);
+    config.setModuloSelecionado(modulo);
     nextPage();
   }
 
   void selectEmpresa(int empresa) {
-    setEmpresaSelecionada(empresa);
+    config.setEmpresaSelecionada(empresa);
     nextPage();
   }
 
   void selectUsuario(int usuario) {
-    setUsuarioSelecionado(usuario);
+    config.setUsuarioSelecionado(usuario);
     nextPage();
   }
 }

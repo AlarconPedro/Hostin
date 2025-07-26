@@ -4,11 +4,14 @@ import 'package:painel_hostin/classes/classes.dart';
 import 'package:painel_hostin/di/di_controllers.dart';
 import 'package:painel_hostin/ui/views/login/login.dart';
 
+import 'di/di_system.dart';
+
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   Intl.defaultLocale = 'pt_BR';
 
   setupEntities();
+  setupDi();
   runApp(
     MaterialApp(
       home: Login(),
